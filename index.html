@@ -236,7 +236,7 @@ tr:hover td{background:rgba(0,0,0,.02)}
 
 <div class="page" id="page-pr">
   <div class="wrap">
-    <div id="deuda-panel" style="background:#fff;border-radius:12px;border:0.5px solid rgba(0,0,0,.1);padding:16px 20px;margin-bottom:20px">
+    <div id="deuda-panel" style="background:#fff;border-radius:12px;border:0.5px solid rgba(0,0,0,.1);padding:16px 20px;margin-bottom:12px">
       <div style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:#9b9a94;margin-bottom:10px">Deuda banco desde administración Brainbest</div>
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
         <div>
@@ -256,6 +256,27 @@ tr:hover td{background:rgba(0,0,0,.02)}
         <div id="deuda-bar" style="height:8px;background:#3B6D11;border-radius:4px;transition:width .5s;width:0%"></div>
       </div>
       <div style="font-size:11px;color:#9b9a94;margin-top:5px" id="deuda-pct"></div>
+    </div>
+    <div style="background:#fff;border-radius:12px;border:0.5px solid rgba(0,0,0,.1);padding:16px 20px;margin-bottom:20px">
+      <div style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:#9b9a94;margin-bottom:10px">Préstamo Saldo Stock</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+        <div>
+          <div style="font-size:11px;color:#9b9a94;margin-bottom:3px">Deuda inicial</div>
+          <div style="font-size:20px;font-weight:500;color:#1a1a18">10.244 UF</div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:#9b9a94;margin-bottom:3px">Pagado a la fecha</div>
+          <div style="font-size:20px;font-weight:500;color:#3B6D11" id="stock-pagado">7.051 UF</div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:#9b9a94;margin-bottom:3px">Saldo pendiente</div>
+          <div style="font-size:20px;font-weight:500;color:#854F0B" id="stock-saldo">3.193 UF</div>
+        </div>
+      </div>
+      <div style="margin-top:12px;height:8px;background:#f0eeea;border-radius:4px;overflow:hidden">
+        <div style="height:8px;background:#3B6D11;border-radius:4px;width:68.8%"></div>
+      </div>
+      <div style="font-size:11px;color:#9b9a94;margin-top:5px">68.8% pagado (7.051 de 10.244 UF)</div>
     </div>
     <div class="an-sub" id="pr-sub">Cargando proyección…</div>
     <div class="tl-title" style="margin-bottom:10px">UF proyectada por mes</div>
