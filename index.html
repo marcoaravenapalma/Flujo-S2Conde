@@ -799,7 +799,7 @@ function buildFunnel(){
   document.getElementById("deuda-pct").textContent    = pct.toFixed(1)+"% pagado ("+fTot(pagado)+" de "+fTot(DEUDA_INICIAL)+" UF)";
 
   // ── Total consolidado ──
-  var STOCK_INICIAL = 10244, STOCK_PAGADO = 7051;
+  var STOCK_INICIAL = 10244, STOCK_PAGADO = 8906;
   var totalInicial  = DEUDA_INICIAL + STOCK_INICIAL;
   var totalPagado   = pagado + STOCK_PAGADO;
   var totalSaldo    = Math.max(0, totalInicial - totalPagado);
