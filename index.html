@@ -790,7 +790,7 @@ function buildFunnel(){
 
   // ── Panel de deuda ──
   var DEUDA_INICIAL = 44576;
-  var pagado = 37580;
+  var pagado = 44576;
   var saldo = Math.max(0, DEUDA_INICIAL - pagado);
   var pct = Math.min(100, (pagado / DEUDA_INICIAL * 100));
   document.getElementById("deuda-pagado").textContent = fTot(pagado)+" UF";
@@ -799,7 +799,7 @@ function buildFunnel(){
   document.getElementById("deuda-pct").textContent    = pct.toFixed(1)+"% pagado ("+fTot(pagado)+" de "+fTot(DEUDA_INICIAL)+" UF)";
 
   // ── Total consolidado ──
-  var STOCK_INICIAL = 10244, STOCK_PAGADO = 8906;
+  var STOCK_INICIAL = 10244, STOCK_PAGADO = 4524;
   var totalInicial  = DEUDA_INICIAL + STOCK_INICIAL;
   var totalPagado   = pagado + STOCK_PAGADO;
   var totalSaldo    = Math.max(0, totalInicial - totalPagado);
